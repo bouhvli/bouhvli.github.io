@@ -1,0 +1,345 @@
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(18, 25, 54);
+    color:azure;
+}
+#navigation{
+    width: 100%;
+    height:100px;
+    position:fixed;
+    top:0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color:rgb(18, 25, 54) ;
+    z-index: 1;
+    border-bottom: 2px solid azure;
+}
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+#nav-bar > ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    list-style: none;
+    margin-block: 0;
+    margin-top: 20px;
+}
+#nav-bar > ul > li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;;
+}
+a::after{
+    color: aliceblue;
+}
+a::before{
+    color: bisque;
+}
+a:hover{
+    background-color: darkslateblue;
+    border-bottom: 2px solid aliceblue;
+}
+
+
+#home{
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home > p{
+    text-align: center;
+}
+
+#subscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px auto;
+    background-color: rgba(123, 123, 167, 0.399);
+    width:450px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 45px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+#subscribe > input{
+    width: 350px;
+    height: 25px;
+    border-radius: 35px;
+    border: none;
+    padding: 15px;
+    background-color: azure;
+    opacity: 80%;
+}
+#subscribe > input:active{
+    border:none;
+}
+#subscribe > input:focus{
+    border:none;
+    outline: none;
+    font-weight: bold;
+}
+#subscribe > button  {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 50%;
+    height: 45px;
+    width:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#subscribe > button >i{
+    color: rgb(123, 123, 167);
+}
+#advantages{
+    height: 100vh;
+    width: 100%;
+}
+#advantages > h1{
+    margin-left: 10%;
+}
+.devider{
+    height: 200px;
+    width: 5px;
+    border-radius: 10%;
+    margin: 10px 10px;
+    background-color: azure;
+}
+.advantages-container{
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.advantages-preview{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.advantages-preview > p{
+    margin-left: 10px;
+    text-align: left;
+}
+#information{
+    height: 100vh;
+    width: 100%;
+}
+#information> h1{
+    margin-left: 10%;
+}
+.information-block{
+    width: 80%;
+    margin: 5% auto;
+    display:flex;
+    flex-direction: row-reverse ;
+    justify-content: center;
+    align-items:flex-start;
+}
+.information-block > p{
+    margin-left: 10px;
+    text-align: justify;
+}
+#benefits{
+    height: 100vh;
+    width: 100%;
+}
+#benefits > h1{
+    margin-left: 10.5%;
+}
+.packege-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.packege.main{
+    scale: 1.2;
+}
+.packege{
+    height: 360px;
+    border: 4px solid azure;
+    color:azure;
+    width: 300px;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 10px ;
+}
+.packege > h3, p, button{
+    
+    margin-left: 10px;
+}
+.packege > img {
+    width: 280px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.packege > button{
+    border:none;
+    outline: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color:  rgb(18, 25, 54);
+    border: 2px solid rgb(18, 25, 54);
+}
+.packege > button:hover{
+    border:none;
+    outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: azure;
+    border: 2px solid azure;
+    background-color:  rgb(18, 25, 54);
+}
+#services{
+    height: 100vh;
+    width: 100%;
+    
+}
+#services > h1{
+    margin-left: 10.5%;
+    margin-bottom: 4%;
+}
+#services > div>div >img {
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+.services-grid{
+    display: grid;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item{
+    border-radius: 10px;
+}
+
+.item1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+.item2{
+    grid-column: 2 ;
+    grid-row: 1 / span 3;
+}
+.item5{
+    grid-column:1 / span 2;
+    grid-row: 3;
+}
+#about-us{
+    height: 60vh;
+    width: 100%;
+    margin: 10% auto
+}
+#about-us> h1{
+    margin-left: 10.5%;
+    margin-bottom: 4%;
+}
+.quote{
+    width: 80%;
+    margin: 10% auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-us{
+    height: 70vh;
+    width: 100%;
+    margin: 0 auto 10% auto;
+}
+#contact-us> h1{
+    margin-left: 10.5%;
+    margin-bottom: 4%;
+}
+form{
+    width: 80%;
+    margin: 0% auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-form{
+    background-color: rgb(88, 88, 142);
+    padding: 5%;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px ;
+    border: 2px solid azure;
+    margin-bottom: 10%;
+}
+.info{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.info>label>input[type=text],.info>label>input[type=email],.info>label>textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#submit {
+    border:none;
+    outline: none;
+    padding: 5px;
+    width: 20%;
+    height: 10%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color:  rgb(18, 25, 54);
+    border: 2px solid rgb(255, 255, 255);
+}
+#submit:hover{
+    border:none;
+    outline: none;
+    padding: 5px;
+    width: 20%;
+    height: 10%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: azure;
+    border: 2px solid azure;
+    background-color:  rgb(88, 88, 142);
+}
+footer{
+    height: 20vh;
+    display: flex;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid azure;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
